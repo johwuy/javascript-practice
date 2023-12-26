@@ -7,7 +7,20 @@
  * @example [{name: "Chase", grade: 89}, {name: "Raman", grade: 92}] -> [{name: "Raman", grade: 92}, {name: "Chase", grade: 89}]
 */
 function problem(students) {
-    return null;
+    return students.sort(function(student1, student2) {
+        return student2.grade - student1.grade
+    })
+
+    /* 
+    return value > 0; sort b before a; [b, a]
+    return value < 0; sort a before b; [a, b]
+
+    Descending order: Highest to lowest
+    The one on left should be the highest.
+    If 'b' is the highest, and return vakue is positive then 'b' is the highest. b-a>0
+
+    if 'a' is the highest and return value is negative then b-a < 0.
+    */
 }
 
 const tests = [

@@ -8,7 +8,11 @@
  * @example "racecar" -> true
 */
 function problem(str) {
-    return null;
+    const formatedString = str.toLowerCase().replaceAll(" ", "")
+    function reverse(str){
+        return str.split("").reverse().join("");
+    }    
+    return formatedString === reverse(formatedString)
 }
 
 const tests = [
@@ -18,5 +22,7 @@ const tests = [
     ["Was it a cat I saw", true],
     ["how are you", false]
 ]
+
+console.log(problem(tests[4][0]))
 
 module.exports = {problem, tests};

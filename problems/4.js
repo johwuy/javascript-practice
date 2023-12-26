@@ -7,7 +7,10 @@
  * @example ["chase", "uci", "apple", "zebra"] -> ["zebra", "uci", "chase", "apple"]
 */
 function problem(words) {
-    return null;
+    const sortedWords = words.sort()
+    const reverseSortedWords = sortedWords.reverse()
+    // OR const reverseSortedWords = sortedWords..sort().reverse()
+    return reverseSortedWords;
 }
 
 const tests = [

@@ -7,7 +7,14 @@
  * @example [3,2,3] -> 3
 */
 function problem(numbers) {
-    return null;
+    let count = {}
+    const majority = Math.floor(numbers.length / 2)
+    for (const number of numbers) {
+        count[number] = (count[number] || 0)  + 1
+        if (count[number] > majority) {
+            return number
+        }
+    }
 }
 
 const tests = [

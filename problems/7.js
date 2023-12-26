@@ -7,7 +7,8 @@
  * @example [1, 2, 3] -> 6
 */
 function problem(numbers) {
-    return null;
+    return numbers.reduce((num1, num2) => num1 + num2, 0);
+    //Need to start at 0 because it needs to know that is it working with an integer
 }
 
 const tests = [

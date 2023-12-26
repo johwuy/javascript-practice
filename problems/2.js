@@ -7,7 +7,13 @@
  * @example ["Chase", "Raman"] -> ["Hi Chase", "Hi Raman"]
  */
 function problem(names) {
-    return null;
+    newList = names.map(function(name) {
+        return `Hi ${name}`
+    })
+    
+    // newList = names.map(name => `Hi ${name}`) - Also works, utlizes arrow function.
+
+    return newList;
 }
 
 const tests = [

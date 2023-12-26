@@ -7,7 +7,13 @@
  * @example [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [3, 6, 9]
  */
 function problem(numbers) {
-    return null;
+    let newList = numbers.filter(number => number % 3 === 0)
+    /* Above uses arrow function
+    let newList = numbers.filter(function(num) {
+        return number % 3 === 0
+    })
+    */
+    return newList;
 }
 
 const tests = [
