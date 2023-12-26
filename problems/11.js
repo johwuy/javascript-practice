@@ -23,6 +23,4 @@ const tests = [
     ["how are you", false]
 ]
 
-console.log(problem(tests[4][0]))
-
 module.exports = {problem, tests};
